@@ -35,7 +35,8 @@ train_transform = transforms.Compose(
     [
         transforms.Resize((64, 64)),
         transforms.RandomHorizontalFlip(p=0.5),
-        transforms.ToTensor()
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ]
 )
 
@@ -43,6 +44,7 @@ test_transform = transforms.Compose(
     [
         transforms.Resize((64, 64)),
         transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ]
 )
 
@@ -58,3 +60,9 @@ def test_dataloaders(batch_size: int = 32):
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
 
     return test_loader
+
+def val_dataloaders(batch_size: int = 32):
+    val_dataset = EuroSATDataset(csv_file=DATA_DIR / "validation.csv",img_dir=DATA_DIR,transform=test_transform)
+    val_loader=DataLoader(val_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
+
+    return val_loader
