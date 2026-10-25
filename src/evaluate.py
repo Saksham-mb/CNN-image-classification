@@ -14,7 +14,7 @@ RESULTS_DIR = PROJECT_ROOT / "results"
 FIGURES_DIR = RESULTS_DIR / "figures"
 
 model = TinyVGG(in_channels=3, hidden_channels=16, nodes_layer=64, out_classes=10)
-model.load_state_dict(torch.load(MODEL_DIR / "TinyVGG_model.pth"))
+model.load_state_dict(torch.load(MODEL_DIR / "TinyVGG_model.pth", map_location=torch.device('cpu')))
 model.eval()
 
 test_loader = test_dataloaders(batch_size=64)
@@ -72,7 +72,7 @@ for i in range(cm.shape[0]):
 
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
-plt.title(f"Confusion Matrix (Test Acc: {accuracy*100:.2f}%)")
+plt.title(f"Confusion Matrix (Test Acc: {accuracy:.2f}%)")
 plt.savefig(FIGURES_DIR / "confusion_matrix.png")
 plt.close()
 
