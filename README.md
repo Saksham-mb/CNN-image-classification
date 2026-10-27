@@ -50,7 +50,7 @@ Inspection of the misclassified samples is stored in `results/misclassified.json
 
 ### Setup Environment
 ```bash
-git clone [https://github.com/](https://github.com/)<your-username>/cnn-image-classification.git
+git clone https://github.com/<Saksham-mb>/cnn-image-classification.git
 cd cnn-image-classification
 pip install -r requirements.txt
 ```
