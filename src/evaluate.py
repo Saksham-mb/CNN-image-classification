@@ -8,13 +8,18 @@ import torch
 from data import test_dataloaders
 from model import TinyVGG
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = PROJECT_ROOT / "models"
 RESULTS_DIR = PROJECT_ROOT / "results"
 FIGURES_DIR = RESULTS_DIR / "figures"
 
-model = TinyVGG(in_channels=3, hidden_channels=16, nodes_layer=64, out_classes=10)
-model.load_state_dict(torch.load(MODEL_DIR / "TinyVGG_model.pth", map_location=torch.device('cpu')))
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+
+model = TinyVGG(in_channels=3, hidden_channels=16, nodes_layer=64, out_classes=10).to(device)
+model.load_state_dict(torch.load(MODEL_DIR / "TinyVGG_model.pth", map_location=device))
 model.eval()
 
 test_loader = test_dataloaders(batch_size=64)
@@ -26,12 +31,12 @@ current_sample_idx = 1
 
 with torch.inference_mode():
   for features, labels in test_loader:
-    features, labels = features, labels
+    features, labels = features.to(device), labels.to(device)
     logits = model(features)
     preds = torch.argmax(logits, dim=1)
 
-    preds_np = preds.numpy()
-    labels_np = labels.numpy()
+    preds_np = preds.cpu().numpy()
+    labels_np = labels.cpu().numpy()
 
     for p, y in zip(preds_np, labels_np):
       if p != y:
@@ -73,7 +78,7 @@ for i in range(cm.shape[0]):
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.title(f"Confusion Matrix (Test Acc: {accuracy:.2f}%)")
-plt.savefig(FIGURES_DIR / "confusion_matrix.png")
+plt.savefig(FIGURES_DIR / "confusion_matrix.png", bbox_inches="tight")
 plt.close()
 
-print(f"Metrics saved to {RESULTS_DIR / 'metrics.json'} and"f" {FIGURES_DIR / 'confusion_matrix.png'}")
+print(f"Metrics saved to {RESULTS_DIR / 'metrics.json'} and {FIGURES_DIR / 'confusion_matrix.png'}")
