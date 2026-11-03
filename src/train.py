@@ -28,11 +28,12 @@ val_dataloader = val_dataloaders(batch_size=100)
 
 train_losses = []
 val_losses = []
+best_val_loss = float('inf')
 
 for epoch in range(epochs):
     train_model.train()
     train_loss=0
-    test_loss=0
+    val_loss=0
     for features, labels in train_dataloader:
         features, labels = features.to(device), labels.to(device)
         y_train_logit=train_model(features)
@@ -52,9 +53,10 @@ for epoch in range(epochs):
             val_loss += loss.item()
             preds = torch.argmax(y_val_logit, dim=1)
     epoch_val_loss = val_loss / len(val_dataloader)
+    if epoch_val_loss<best_val_loss:
+        best_val_loss=epoch_val_loss
+        torch.save(train_model.state_dict(), MODEL_DIR / "TinyVGG_model.pth")
     val_losses.append(epoch_val_loss)
-
-torch.save(train_model.state_dict(), MODEL_DIR / "TinyVGG_model.pth")
 
 plt.figure(figsize=(8, 5))
 plt.plot(range(1, epochs + 1), train_losses, "b", label="Train Loss")

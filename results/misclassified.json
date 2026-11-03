@@ -1,101 +1,101 @@
 [
   {
-    "sample_idx": 7,
+    "sample_idx": 6,
     "true": 5,
     "pred": 1
   },
   {
-    "sample_idx": 18,
+    "sample_idx": 17,
     "true": 8,
     "pred": 3
   },
   {
-    "sample_idx": 95,
+    "sample_idx": 94,
     "true": 2,
     "pred": 0
   },
   {
-    "sample_idx": 110,
+    "sample_idx": 109,
     "true": 6,
     "pred": 2
   },
   {
-    "sample_idx": 129,
+    "sample_idx": 128,
     "true": 3,
     "pred": 8
   },
   {
-    "sample_idx": 130,
+    "sample_idx": 129,
     "true": 8,
     "pred": 0
   },
   {
-    "sample_idx": 140,
+    "sample_idx": 139,
     "true": 8,
     "pred": 5
   },
   {
-    "sample_idx": 164,
+    "sample_idx": 163,
     "true": 8,
     "pred": 5
   },
   {
-    "sample_idx": 199,
+    "sample_idx": 198,
     "true": 2,
     "pred": 6
   },
   {
-    "sample_idx": 205,
+    "sample_idx": 204,
     "true": 2,
     "pred": 4
   },
   {
-    "sample_idx": 216,
+    "sample_idx": 215,
     "true": 3,
     "pred": 4
   },
   {
-    "sample_idx": 293,
+    "sample_idx": 292,
     "true": 2,
     "pred": 4
   },
   {
-    "sample_idx": 321,
+    "sample_idx": 320,
     "true": 2,
     "pred": 6
   },
   {
-    "sample_idx": 350,
+    "sample_idx": 349,
     "true": 3,
     "pred": 4
   },
   {
-    "sample_idx": 388,
+    "sample_idx": 387,
     "true": 3,
     "pred": 4
   },
   {
-    "sample_idx": 401,
+    "sample_idx": 400,
     "true": 8,
     "pred": 1
   },
   {
-    "sample_idx": 408,
+    "sample_idx": 407,
     "true": 2,
     "pred": 6
   },
   {
-    "sample_idx": 416,
+    "sample_idx": 415,
     "true": 6,
     "pred": 2
   },
   {
-    "sample_idx": 425,
+    "sample_idx": 424,
     "true": 0,
     "pred": 9
   },
   {
-    "sample_idx": 427,
+    "sample_idx": 426,
     "true": 8,
     "pred": 0
   }

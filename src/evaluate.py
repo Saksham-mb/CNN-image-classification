@@ -14,20 +14,26 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = PROJECT_ROOT / "models"
 RESULTS_DIR = PROJECT_ROOT / "results"
 FIGURES_DIR = RESULTS_DIR / "figures"
+DATA_DIR = PROJECT_ROOT / "datasets" / "EuroSAT"
 
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
-model = TinyVGG(in_channels=3, hidden_channels=16, nodes_layer=64, out_classes=10).to(device)
-model.load_state_dict(torch.load(MODEL_DIR / "TinyVGG_model.pth", map_location=device))
+with open(DATA_DIR / "label_map.json") as f:
+    label_map = json.load(f)
+
+model=TinyVGG(in_channels=3, hidden_channels=16, nodes_layer=64, out_classes=10).to(device)
+model.load_state_dict(torch.load(MODEL_DIR / "TinyVGG_model.pth", map_location=device, weights_only=True))
 model.eval()
 
-test_loader = test_dataloaders(batch_size=64)
+test_loader=test_dataloaders(batch_size=64)
 
-all_preds = []
-all_labels = []
-misclassified = []
-current_sample_idx = 1
+class_names = [name for name, label_id in sorted(label_map.items(), key=lambda item: item[1])]
+
+all_preds=[]
+all_labels=[]
+misclassified=[]
+current_sample_idx=0
 
 with torch.inference_mode():
   for features, labels in test_loader:
@@ -71,6 +77,12 @@ with open(RESULTS_DIR / "misclassified.json", "w") as f:
 cm = confusion_matrix(all_labels, all_preds)
 fig, ax = plt.subplots(figsize=(8, 8))
 cax = ax.matshow(cm, cmap=plt.cm.Blues, alpha=0.8)
+
+ax.set_xticks(range(len(class_names)))
+ax.set_yticks(range(len(class_names)))
+ax.set_xticklabels(class_names, rotation=45, ha="left")
+ax.set_yticklabels(class_names)
+
 for i in range(cm.shape[0]):
   for j in range(cm.shape[1]):
     ax.text(x=j,y=i,s=cm[i, j],va="center",ha="center",size="small" if cm[i, j] > 999 else "medium")
