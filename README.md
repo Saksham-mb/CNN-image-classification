@@ -39,7 +39,7 @@ datasets/
 
 | Model | Test Accuracy | Macro F1 |
 | :--- | :--- | :--- |
-| **TinyVGG (Scratch)** | 94.52% | 0.73 |
+| **TinyVGG (Scratch)** | 94.52% | 0.9431 |
 
 Confusion matrix, loss curves and other metrics in `results/`
 
