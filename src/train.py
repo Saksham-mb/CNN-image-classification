@@ -1,70 +1,49 @@
 import matplotlib.pyplot as plt
-from model import TinyVGG
+from model import TinyVGG, ResNet18
+from utilities import train_model
 import torch
 from data import train_dataloaders, val_dataloaders
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-MODEL_DIR = PROJECT_ROOT / "models"
 FIGURES_DIR = PROJECT_ROOT / "results" / "figures"
 
-MODEL_DIR.mkdir(parents=True, exist_ok=True)
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
 epochs = 20
 lr = 0.001
 
 device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 torch.manual_seed(42)
 
-train_model = TinyVGG(in_channels=3,hidden_channels=16,nodes_layer=64,out_classes=10).to(device)
-
-loss_fn = torch.nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(params=train_model.parameters(), lr=lr)
+model_0 = TinyVGG(in_channels=3,hidden_channels=16,nodes_layer=64,out_classes=10).to(device)
+model_1 = ResNet18(out_classes=10).to(device)
 
 train_dataloader = train_dataloaders(batch_size=64)
 val_dataloader = val_dataloaders(batch_size=100)
 
-train_losses = []
-val_losses = []
-best_val_loss = float('inf')
-
-for epoch in range(epochs):
-    train_model.train()
-    train_loss=0
-    val_loss=0
-    for features, labels in train_dataloader:
-        features, labels = features.to(device), labels.to(device)
-        y_train_logit=train_model(features)
-        loss=loss_fn(y_train_logit, labels)
-        train_loss+=loss.detach().item()
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-    train_losses.append(train_loss/len(train_dataloader))
-
-    train_model.eval()
-    with torch.inference_mode():
-        for features, labels in val_dataloader:
-            features, labels = features.to(device), labels.to(device)
-            y_val_logit = train_model(features)
-            loss = loss_fn(y_val_logit, labels)
-            val_loss += loss.item()
-            preds = torch.argmax(y_val_logit, dim=1)
-    epoch_val_loss = val_loss / len(val_dataloader)
-    if epoch_val_loss<best_val_loss:
-        best_val_loss=epoch_val_loss
-        torch.save(train_model.state_dict(), MODEL_DIR / "TinyVGG_model.pth")
-    val_losses.append(epoch_val_loss)
+train_losses_0, val_losses_0 = train_model(model_0, train_dataloader, val_dataloader, epochs=epochs, lr=lr)
+train_losses_1, val_losses_1 = train_model(model_1, train_dataloader, val_dataloader, epochs=epochs, lr=lr)
 
 plt.figure(figsize=(8, 5))
-plt.plot(range(1, epochs + 1), train_losses, "b", label="Train Loss")
-plt.plot(range(1, epochs + 1), val_losses, "r", label="Validation Loss")
-plt.xlabel("Epochs")
-plt.ylabel("Loss")
-plt.title("Train vs Validation Loss")
-plt.legend()
-plt.grid(True)
+fir, axs = plt.subplots(1, 2, figsize=(12, 8))
+
+axs[0].plot(range(1, epochs + 1), train_losses_0, "b", label="Train Loss")
+axs[0].plot(range(1, epochs + 1), val_losses_0, "r", label="Validation Loss")
+axs[0].set_xlabel("Epochs")
+axs[0].set_ylabel("Loss")
+axs[0].set_title("TinyVGG")
+axs[0].legend()
+axs[0].grid(True)
+
+axs[1].plot(range(1, epochs + 1), train_losses_1, "b", label="Train Loss")
+axs[1].plot(range(1, epochs + 1), val_losses_1, "r", label="Validation Loss")
+axs[1].set_xlabel("Epochs")
+axs[1].set_ylabel("Loss")
+axs[1].set_title("ResNet18")
+axs[1].legend()
+axs[1].grid(True)
+
+plt.suptitle("Loss curve comparison of TinyVGG and ResNet18 on training and validation data")
 plt.savefig(FIGURES_DIR / "loss_curves.png", bbox_inches="tight")
 plt.close()

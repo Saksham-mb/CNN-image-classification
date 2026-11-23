@@ -1,5 +1,5 @@
-import torch
 from torch import nn
+from torchvision import models
 
 class TinyVGG(nn.Module):
     def __init__(self, in_channels: int, hidden_channels: int, nodes_layer: int, out_classes: int):
@@ -33,3 +33,10 @@ class TinyVGG(nn.Module):
         x=self.conv_block_1(x)
         x=self.conv_block_2(x)
         return self.classifier(x)
+
+def ResNet18(out_classes: int):
+    model = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+    for param in model.parameters():
+            param.requires_grad = False
+    model.fc = nn.Linear(model.fc.in_features, out_classes)
+    return model

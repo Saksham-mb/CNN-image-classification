@@ -1,0 +1,1122 @@
+[
+  {
+    "sample_idx": 2,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 5,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 17,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 105,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 109,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 111,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 129,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 139,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 163,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 175,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 222,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 260,
+    "true_id": 4,
+    "true_class": "Industrial",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 279,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 307,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 332,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 400,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 415,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 426,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 449,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 464,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 497,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 506,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 508,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 528,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 551,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 572,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 587,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 591,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 600,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 626,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 685,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 712,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 713,
+    "true_id": 7,
+    "true_class": "Residential",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 716,
+    "true_id": 4,
+    "true_class": "Industrial",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 721,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 728,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 736,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 747,
+    "true_id": 4,
+    "true_class": "Industrial",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 772,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 802,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 838,
+    "true_id": 1,
+    "true_class": "Forest",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 845,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 862,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 871,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 885,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 905,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 936,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 971,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 989,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1031,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 1054,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1067,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1085,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1089,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 1096,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1108,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1129,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1145,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1153,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 7,
+    "pred_class": "Residential"
+  },
+  {
+    "sample_idx": 1157,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1195,
+    "true_id": 9,
+    "true_class": "SeaLake",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1202,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 1229,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1244,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1249,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1277,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1304,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 1309,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 1331,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1337,
+    "true_id": 4,
+    "true_class": "Industrial",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 1338,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1360,
+    "true_id": 4,
+    "true_class": "Industrial",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1400,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1415,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1416,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1475,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1477,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1491,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1493,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 1496,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 7,
+    "pred_class": "Residential"
+  },
+  {
+    "sample_idx": 1505,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 1525,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1543,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 1553,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1573,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1588,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 1608,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 9,
+    "pred_class": "SeaLake"
+  },
+  {
+    "sample_idx": 1626,
+    "true_id": 1,
+    "true_class": "Forest",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1632,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 9,
+    "pred_class": "SeaLake"
+  },
+  {
+    "sample_idx": 1633,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1659,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1671,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 1697,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 1717,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 1754,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1755,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1757,
+    "true_id": 9,
+    "true_class": "SeaLake",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1772,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1789,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1792,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1796,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1807,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1808,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1828,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 1854,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1865,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1892,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1895,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 1896,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1899,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1911,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1913,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 1918,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1924,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 1939,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 1963,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 1964,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 1972,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 1978,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 2002,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2066,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 2074,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2076,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 7,
+    "pred_class": "Residential"
+  },
+  {
+    "sample_idx": 2085,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2088,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 2110,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 7,
+    "pred_class": "Residential"
+  },
+  {
+    "sample_idx": 2133,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 2188,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2201,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2204,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 7,
+    "pred_class": "Residential"
+  },
+  {
+    "sample_idx": 2249,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2274,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2275,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 1,
+    "pred_class": "Forest"
+  },
+  {
+    "sample_idx": 2277,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 2282,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2288,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 2300,
+    "true_id": 4,
+    "true_class": "Industrial",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 2303,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2356,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 8,
+    "pred_class": "River"
+  },
+  {
+    "sample_idx": 2362,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 2385,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 2407,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 2448,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2457,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 2471,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 2482,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2483,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2487,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 2492,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2510,
+    "true_id": 5,
+    "true_class": "Pasture",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2511,
+    "true_id": 9,
+    "true_class": "SeaLake",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  },
+  {
+    "sample_idx": 2514,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2554,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2555,
+    "true_id": 2,
+    "true_class": "HerbaceousVegetation",
+    "pred_id": 0,
+    "pred_class": "AnnualCrop"
+  },
+  {
+    "sample_idx": 2562,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 3,
+    "pred_class": "Highway"
+  },
+  {
+    "sample_idx": 2628,
+    "true_id": 0,
+    "true_class": "AnnualCrop",
+    "pred_id": 6,
+    "pred_class": "PermanentCrop"
+  },
+  {
+    "sample_idx": 2634,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 2,
+    "pred_class": "HerbaceousVegetation"
+  },
+  {
+    "sample_idx": 2642,
+    "true_id": 3,
+    "true_class": "Highway",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 2660,
+    "true_id": 6,
+    "true_class": "PermanentCrop",
+    "pred_id": 4,
+    "pred_class": "Industrial"
+  },
+  {
+    "sample_idx": 2698,
+    "true_id": 8,
+    "true_class": "River",
+    "pred_id": 5,
+    "pred_class": "Pasture"
+  }
+]
